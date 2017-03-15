@@ -29,7 +29,7 @@ class NaiveInvokerProcessor implements InvokerProcessorInterface
      */
     public function process($payload, callable $stage, callable $fallback = null)
     {
-        return $stage($fallback);
+        return $stage($payload);
     }
 
 }
